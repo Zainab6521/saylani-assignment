@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+img{
+    justify-content:flex-start;
+
+    width:200px;
+    height:auto;
+    margin-top:50px;
+    margin-bottom:-80px;
+}
+header {
+    width: 100%;
+    color:black;
+}
+.hover-me{
+    /*justify-content:flex-start;*/
+}
+    header .dis {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        /*background-color:grey;*/
+        /*text-align:left;*/
+        /*text-indent:-20%;*/
+    }
+    header ul .hme {
+        list-style: none;
+        position: relative;
+        padding: 10px 15px;
+        transition: 0.5s;
+        box-sizing: border-box;
+        /*border-right:1px solid red;*/
+
+    }
+    header .dis .hme a {
+        text-decoration: none;
+        /*padding: 0 20px;*/
+        /*color:red;*/
+        color:black;
+    }
+    header .fa{
+       margin-left:10px;
+    }
+    header .dis .hme:hover {
+        background-color: lightblue;
+        /*margin-left:-2%;*/
+        transition:0.5s;
+        
+    }
+    header .dis .about ul {
+        position: absolute;
+        top: 37px;
+        left: 0;
+        background: grey;
+        display: block;
+        width: 200px;
+        transition: 0.5s ;
+        opacity: 0;
+        visibility: hidden;
+    }
+    header .dis .about:hover ul {
+        opacity: 1;
+        visibility: visible;
+    }
+   header .dis .hme ul .sub-menu2{
+       visibility:hidden;
+       opacity:0;
+       display:none;
+   }
+header .dis .hme ul .education:hover .sub-menu2 {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 200px;
+    background-color: grey;
+    background: grey;
+    display: block;
+    width: 200px;
+    transition: 0.5s;
+}
+    header .dis .hme .sub-menu2 .sub-menu3 {
+       visibility:hidden;
+       opacity:0;
+       /*list-style:none;*/
+    }
+    header .dis .hme .hover-me:hover .sub-menu3 {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        position: absolute;
+        margin-top: -60px;
+        margin-left: 185px;
+        background-color: grey;
+        background: grey;
+        display: block;
+        width: 200px;
+        transition: 0.5s linear;
+        /*list-style:none;*/
+        
+    }
+    /*.sub-menu4{
+        visibility:hidden;
+        opacity:0;
+    }*/
+/*.medical :hover .sub-menu4 {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 185px;
+    background-color: grey;
+    background: grey;
+    display: block;
+    width: 200px;
+    list-style: none;
+    transition: 0.5s;
+    list-style: none;
+    width: 100%;
+}*/
+    /*ul{
+        list-style-type:none;
+        display:block;
+    }*/
+/*header .dis .hme ul .medical .sub-menu4 ul li:first-child{
+    width:100%;
+}*/
+header .dis .hme ul .medical .sub-menu4 {
+    visibility: hidden;
+    opacity: 0;
+    /*width: auto;*/
+    list-style-type:none;
+}
+.medical {
+    list-style: none;
+    padding: 10px  15px;
+    /*width:200px;*/
+}
+.medical:hover{
+    background-color:lightblue;
+    list-style:none;
+    width:170px;
+    
+}
+header .dis .hme ul .medical:hover .sub-menu4 {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 185px;
+    background-color: grey;
+    background: grey;
+    display: block;
+    width: 200px;
+    /*list-style:none;*/
+    transition: 0.5s;
+    /*list-style:none;*/
+    /*width:100%;*/
+ }
+header .dis .hme ul .welfare:hover{
+    width:200px;
+}
+header .dis .hme ul .welfare .sub-menu5 {
+    visibility: hidden;
+    opacity: 0;
+}
+/*.welfare {
+    list-style: none;
+    padding: 10px 15px;
+}
+    .welfare:hover {
+        background-color: lightblue;
+        list-style: none;
+        width: 170px;
+    }*/
+/*header .dis .hme ul .welfare{
+    width:170px;
+    position:absolute;
+    top:50px;
+    padding:10px 15px;
+}*/
+header .dis .hme ul .welfare:hover .sub-menu5 {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 185px;
+    background-color: grey;
+    background: grey;
+    display: block;
+    width: 200px;
+    /*list-style:none;*/
+    transition: 0.5s;
+}
+@media (max-width:768px) {
+    img{
+        position:relative;
+        margin-bottom:2px;
+    }
+    header .dis {
+        display: block;
+        text-align: left;
+    }
+
+        header .dis .hme {
+            display: block;
+        }
+
+            header .dis .hme ul {
+                width: 100%;
+                z-index: 1;
+            }
+
+    /*header ul li li ul {
+        position: absolute;
+        display: block;
+        width: 100%;
+        /*z-index:1;*/
+    }*/
+
+    header .dis .hme ul .sub-menu2 {
+        width: 50%;
+        z-index: 1;
+    }
+    .medical{
+        width:35%;
+    }
+    header .dis .hme ul .welfare{
+        width:50%;
+    }
+}
